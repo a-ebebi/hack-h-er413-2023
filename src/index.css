@@ -1,11 +1,12 @@
+/* Global styles */
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  margin: 0;
+  padding: 0;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,56 +15,102 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
 
-body {
-  margin: 0;
+/* Header styles */
+header {
+  background-color: #0D3B66;
+  color: #fff;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  box-sizing: border-box;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+nav li {
+  margin-right: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  background-color: #70A288;
+}
+
+/* Footer styles */
+footer {
+  background-color: #8D5524;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.names {
+  display: flex;
+  justify-content: center;
+}
+
+.names p {
+  margin-right: 1rem;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0.5rem;
   }
-  a:hover {
-    color: #747bff;
+
+  header h1 {
+    font-size: 1.5rem;
   }
-  button {
-    background-color: #f9f9f9;
+
+  nav li {
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 0.25rem;
+  }
+
+  header h1 {
+    font-size: 1rem;
+  }
+
+  nav li {
+    margin-right: 0.25rem;
+  }
+
+  .names p {
+    margin-right: 0.5rem;
   }
 }
