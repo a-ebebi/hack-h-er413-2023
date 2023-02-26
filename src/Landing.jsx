@@ -34,11 +34,11 @@ function Landing(props) {
               About
             </li>
             <li className={activePage === 'products' ? 'active' : ''} onClick={() => handlePageChange('products')}>
-              Products
+              Directories as Grid
             </li>
             <li className="dropdown">
               <span className={activePage === 'directories' ? 'active' : ''} onClick={toggleMenu}>
-                Directories
+                Directories as List
               </span>
               {showMenu && (
                 <ul className="dropdown-menu">
