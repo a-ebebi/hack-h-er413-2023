@@ -1,41 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="src\index.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sustainable Food Finder</title>
+    <title>HER+Market</title>
+    <link rel="stylesheet" href="./src/index.css">
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-
-    <!-- Header -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Map</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Products</a></li>
+      </ul>
+    </nav>
     <header>
-      <h1>HER-Market</h1>
-      <nav>
-        <ul>
-          <li><a href="#1">Home</a></li>
-          <li><a href="#2">About</a></li>
-          <li><a href="#"> Products</a></li>
-          <li><a href="#"> Resources</a></li>
-        </ul>
-      </nav>
+      <h1>HER+Market</h1>
     </header>
-
-    <!-- Footer -->
-
+    <main>
+      <section id="hero">
+        <h2>Find Sustainable Food Near You</h2>
+        <form>
+          <label for="location">Enter Your Location:</label>
+          <input type="text" id="location" name="location" required>
+          <button type="submit">Find Food</button>
+        </form>
+      </section>
+      <section id="about">
+        <h3>HER+Market</h3>
+        <p>HER+Market is a community-driven tool that helps you find sustainable food options in your area. We prioritize partnering with women-owned farms and farmers' markets, particularly those owned by women of color, to promote sustainability and equity in the food industry. Our platform provides information on the environmental impact of different foods and suggests eco-friendly recipes to inspire your cooking. Join our community and start eating sustainably today!</p>
+      </section>
+      <section id="resources">
+        <h3>Resources for Sustainability and Supporting People of Color</h3>
+        <ul>
+          <li>Buy from local farmers' markets</li>
+          <li>Reduce food waste by planning meals and using leftovers</li>
+          <li>Choose organic, non-GMO foods</li>
+          <li>Grow your own food</li>
+          <li>Support women-owned and BIPOC-owned businesses</li>
+          <li>Donate to organizations supporting sustainable farming and food justice</li>
+          <li>Volunteer with community gardening and food access programs</li>
+        </ul>
+      </section>
+    </main>
     <footer>
-      <h2>Created for Black Wings Hacks 2023</h2>
+      <h2>Created for UMASS Amherst HackHer413 2023</h2>
       <div class="names">
         <p>Afeya Jahin</p>
         <p>Angel T. Ebebi</p>
         <p>Cynthia Akanaga</p>
-        <p>Sulagna Saha </p>
+        <p>Sulagna Suha</p>
       </div>
     </footer>
-
-
-
   </body>
 </html>

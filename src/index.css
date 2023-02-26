@@ -1,20 +1,9 @@
 /* Global styles */
-
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
-
 
 /* Header styles */
 header {
@@ -24,15 +13,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1;
-  box-sizing: border-box;
 }
-
-
 
 header h1 {
   margin: 0;
@@ -60,16 +41,73 @@ nav a:hover {
   background-color: #70A288;
 }
 
+/* Main styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h3 {
+  color: #0D3B66;
+}
+
+section p {
+  line-height: 1.5;
+}
+
+#hero {
+  background-color: #70A288;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+label {
+  margin-right: 1rem;
+}
+
+input,
+select,
+button {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  color: #0D3B66;
+}
+
+button {
+  background-color: #E9C46A;
+  color: #0D3B66;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #8D5524;
+  color: #fff;
+}
+
 /* Footer styles */
 footer {
   background-color: #8D5524;
   color: #fff;
   padding: 1rem;
   text-align: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .names {
@@ -79,38 +117,4 @@ footer {
 
 .names p {
   margin-right: 1rem;
-}
-
-/* Media queries */
-
-@media screen and (max-width: 768px) {
-  header {
-    padding: 0.5rem;
-  }
-
-  header h1 {
-    font-size: 1.5rem;
-  }
-
-  nav li {
-    margin-right: 0.5rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  header {
-    padding: 0.25rem;
-  }
-
-  header h1 {
-    font-size: 1rem;
-  }
-
-  nav li {
-    margin-right: 0.25rem;
-  }
-
-  .names p {
-    margin-right: 0.5rem;
-  }
 }
